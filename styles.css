@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+h1s {
+    color: red;
+    font-size: 48px;
+    text-align: center;
+}
+
+nav{
+    width: 100%;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+}
