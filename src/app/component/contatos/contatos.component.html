@@ -1,0 +1,15 @@
+<h1>Participantes Minicurso</h1>
+
+<div>
+  <ul>
+    <li *ngFor="let contato of contatos">
+      {{ contato.email }}
+    </li>
+  </ul>
+</div>
+
+<button (click)="geraGanhador()">Gerar ganhador</button>
+
+<div>
+  <h2>Ganhador: {{ contatos[ganhador].email }}</h2>
+</div>

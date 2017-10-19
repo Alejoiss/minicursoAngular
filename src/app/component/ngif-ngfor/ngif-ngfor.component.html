@@ -1,0 +1,22 @@
+<h1>NgIf/NgFor</h1>
+
+<p>
+  Número aleatório atual: {{ numero }}
+</p>
+<p>
+  Último número clicado: {{ ultimoNumeroClicado }}
+</p>
+<p>
+  Último número clicado (serviço): {{ ultimoNumeroClicadoServico }}
+</p>
+<button (click)="geraNumeroAleatorio()">Gerar Número Aleatório</button>
+<br>
+
+<p *ngIf="numero % 2 == 0">
+  É um número par
+</p>
+<p *ngIf="numero % 2 == 1">
+  É um número ímpar
+</p>
+
+<lista-numeros [listaNumeros]="listaNumeros" (saida)="mostrarSaida($event)"></lista-numeros>
